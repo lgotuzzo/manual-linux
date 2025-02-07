@@ -1,0 +1,73 @@
+﻿Manual Básico de Comandos de Linux
+Este manual está diseñado para principiantes y cubre los comandos más usados en Linux.
+1. Navegación y Gestión de Archivos
+* ls: Lista archivos y directorios.
+   * ls (muestra los archivos y carpetas en el directorio actual).
+   * ls -a (incluye archivos ocultos).
+   * ls -l (muestra detalles como permisos y fechas de modificación).
+* cd: Cambia de directorio.
+   * cd /ruta/deseada (cambia a un directorio específico).
+   * cd .. (sube un nivel en la jerarquía de directorios).
+* pwd: Muestra la ruta del directorio actual.
+* mkdir: Crea directorios. Ejemplo: mkdir nueva_carpeta.
+* rmdir: Elimina directorios vacíos.
+* rm: Elimina archivos o carpetas.
+   * rm archivo.txt (elimina un archivo).
+   * rm -r carpeta/ (elimina una carpeta y su contenido).
+   * rm -f archivo.txt (elimina sin confirmación).
+* cp: Copia archivos o directorios.
+   * cp archivo.txt /ruta/destino/ (copia un archivo a otra ubicación).
+* mv: Mueve o renombra archivos.
+   * mv archivo.txt /ruta/nueva/ (mueve un archivo a otra ubicación).
+   * mv viejo_nombre.txt nuevo_nombre.txt (renombra un archivo).
+* touch: Crea un archivo vacío o actualiza su marca de tiempo.
+* file: Muestra el tipo de archivo. Ejemplo: file archivo.txt.
+2. Búsqueda y Manipulación de Archivos
+* find: Busca archivos en un directorio. Ejemplo: find /ruta -name archivo.txt.
+* locate: Busca archivos rápidamente en una base de datos. Ejemplo: locate archivo.txt.
+* tar: Comprime o extrae archivos.
+   * tar -cvzf archivo.tar.gz carpeta/ (comprime).
+   * tar -xvzf archivo.tar.gz (extrae).
+* zip / unzip: Comprime o descomprime archivos en formato ZIP.
+* cat: Muestra el contenido de un archivo. Ejemplo: cat archivo.txt.
+* head: Muestra las primeras líneas de un archivo.
+* tail: Muestra las últimas líneas de un archivo.
+* grep: Busca patrones en archivos. Ejemplo: grep "palabra" archivo.txt.
+* awk: Procesa texto por columnas. Ejemplo: awk '{print $1}' archivo.txt.
+* sed: Reemplaza texto en archivos. Ejemplo: sed 's/viejo/nuevo/g' archivo.txt.
+3. Permisos y Propiedad
+* chmod: Cambia permisos de archivos o directorios. Ejemplo: chmod 755 archivo.txt.
+* chown: Cambia el propietario de un archivo. Ejemplo: chown usuario:grupo archivo.txt.
+* sudo: Ejecuta comandos con permisos de administrador.
+4. Procesos y Sistema
+* ps: Muestra procesos en ejecución. Ejemplo: ps aux.
+* top: Muestra procesos y uso de recursos en tiempo real.
+* htop: Versión interactiva mejorada de top (requiere instalación previa).
+* kill: Termina un proceso. Ejemplo: kill PID.
+* df: Muestra el uso del espacio en disco.
+* du: Muestra el tamaño de archivos o directorios.
+* uname: Muestra información del sistema. Ejemplo: uname -a.
+5. Red y Transferencia de Datos
+* ping: Verifica la conectividad con un servidor. Ejemplo: ping google.com.
+* curl: Descarga archivos o consulta datos desde una URL. Ejemplo: curl -O URL.
+* wget: Descarga archivos desde la web. Ejemplo: wget URL.
+* scp: Copia archivos de manera segura entre sistemas. Ejemplo: scp archivo.txt usuario@IP:/ruta/.
+6. Editores de Texto
+* nano: Editor de texto simple.
+* vi / vim: Editor de texto avanzado.
+* gedit: Editor de texto con interfaz gráfica (si está disponible).
+7. Otros Comandos    
+* man: Muestra el manual de un comando. Ejemplo: man ls.
+* history: Muestra el historial de comandos ejecutados.
+* echo: Muestra texto en la terminal. Ejemplo: echo "Hola Mundo".
+* watch: Ejecuta un comando repetidamente. Ejemplo: watch -n 1 comando.
+* apt-get: Gestiona paquetes en distribuciones basadas en Debian. Ejemplo: sudo apt-get update.
+Consejos Finales
+✅ Linux distingue entre mayúsculas y minúsculas en los nombres de archivos y comandos.
+✅ Usa sudo con precaución, ya que puede afectar archivos críticos del sistema.
+✅ Si un comando no funciona, revisa su manual con man comando.
+✅ Puedes automatizar tareas combinando comandos con scripts en Bash.
+________________
+
+
+Este manual está pensado para usuarios nuevos. Si tienes dudas o quieres profundizar en algún comando, usa man comando para más información. ¡Bienvenido a Linux! 🚀
